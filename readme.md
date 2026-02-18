@@ -15,7 +15,7 @@ work with the following devices.
 
 ## The Keyboard
 
-![typeractive_kb](https://github.com/DarrenVictoriano/zmk-config/blob/master/images/kb.jpeg)
+![typeractive_kb](images/kb.jpeg)
 
 > Nice!view shield is courtesy of
 > [M165437's nice-view-gem](https://github.com/M165437/nice-view-gem).
@@ -26,7 +26,7 @@ These are the keymaps and layers defined in this config. The keymaps were
 generated using
 [Nick Coutsos's Keymap Editor](https://nickcoutsos.github.io/keymap-editor/).
 
-![keymaps](https://github.com/DarrenVictoriano/zmk-config/blob/master/images/corne.svg)
+![keymaps](images/corne.svg)
 
 **Macros**
 
