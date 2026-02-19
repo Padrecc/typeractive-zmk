@@ -4,6 +4,8 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: m165437
           url-base: https://github.com/M165437
+        - name: padrecc
+          url-base: https://github.com/Padrecc    
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -12,5 +14,8 @@ manifest:
         - name: nice-view-gem
           remote: m165437
           revision: v0.3.0
+        - name: hammerbeam-slideshow          
+          remote: padrecc                       
+          revision: main
     self:
         path: config

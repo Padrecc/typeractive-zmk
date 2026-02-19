@@ -1,134 +1,264 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '$$mdi:keyboard-return$$',
-    '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', lower, '$$mdi:keyboard-space$$',
-    '$$mdi:keyboard-space$$', raise, '$$mdi:apple-keyboard-option$$']
-  lower:
-  - $$mdi:keyboard-esc$$
-  - ''
-  - '7'
-  - '8'
-  - '9'
-  - $$mdi:chevron-up-box$$
-  - $$mdi:cog$$
-  - $$mdi:chevron-left-box$$
-  - $$mdi:chevron-right-box$$
-  - ''
-  - ''
-  - $$mdi:delete$$
+  Base:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace$$
+  - Nav
+  - {t: A, h: LEFT WIN}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RWIN}
+  - ''''
   - $$mdi:apple-keyboard-control$$
-  - ''
-  - '4'
-  - '5'
-  - '6'
-  - $$mdi:chevron-down-box$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - ''
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:lightning-bolt$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Gui+$$mdi:keyboard-space$$
+  - {t: ESCAPE, h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Num}
+  - ENTER
+  - {t: '$$mdi:keyboard-space$$', h: LEFT SHIFT}
+  - {t: '$$mdi:keyboard-space$$', h: Num}
+  - {t: ESCAPE, h: Fn}
+  Num:
+  - '`'
   - '1'
   - '2'
   - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
   - '0'
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - ''
-  - ''
-  - $$mdi:lightning-bolt$$
-  - ⌘⇧
-  - $$mdi:apple-keyboard-command$$
-  - {t: lower, type: held}
-  - $$mdi:keyboard-space$$
-  - ⌘⌥⎵
-  - raise
-  - $$mdi:apple-keyboard-option$$
-  raise:
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - +
-  - '='
-  - '-'
+  - $$mdi:backspace$$
+  - {t: ▽, type: trans}
+  - LWIN
+  - LEFT ALT
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - RIGHT ALT
+  - RWIN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Nav:
+  - {t: ▽, type: trans}
   - ''
-  - '{'
-  - (
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:transfer-up$$
+  - BACKSPACE
+  - $$mdi:arrow-up-bold$$
   - '['
-  - ''''
-  - '"'
   - ']'
-  - )
-  - '}'
   - \
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:lightning-bolt$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - _
-  - ''
-  - ''
-  - ''
-  - $$mdi:lightning-bolt$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - lower
-  - ⌃⎵
-  - $$mdi:keyboard-space$$
-  - {t: raise, type: held}
+  - {type: held}
+  - LEFT WIN
   - $$mdi:apple-keyboard-option$$
-  adjust:
-  - ✦⎋
-  - ''
-  - F7
-  - F8
-  - F9
-  - F12
-  - $$mdi:pan-left$$
-  - $$mdi:pan-down$$
-  - $$mdi:pan-up$$
-  - $$mdi:pan-right$$
-  - ''
-  - $$mdi:camera$$
-  - ''
-  - ''
-  - F4
-  - F5
-  - F6
-  - F11
-  - $$mdi:arrow-left-drop-circle$$
-  - $$mdi:arrow-down-drop-circle$$
-  - $$mdi:arrow-up-drop-circle$$
-  - $$mdi:arrow-right-drop-circle$$
-  - ''
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - $$mdi:chevron-down-box$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - '-'
+  - '='
+  - {t: ▽, type: trans}
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - Home
+  - End
+  - INSERT
+  - $$mdi:delete$$
+  - '?'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Fn:
+  - $$mdi:keyboard-tab$$
   - F1
   - F2
   - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
   - F10
-  - $$mdi:mouse-left-click$$
-  - $$mdi:mouse-right-click$$
-  - $$mdi:mouse-scroll-wheel$$
-  - ''
-  - $$mdi:lightning-bolt$$
+  - F11
+  - {t: ▽, type: trans}
+  - LWIN
+  - LEFT ALT
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - {t: lower, type: held}
+  - OUT TOG
+  - $$mdi:volume-high$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - RIGHT ALT
+  - RWIN
+  - F12
+  - {t: ▽, type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - '&bt_clr_3_tap'
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
   - ''
   - ''
-  - {t: raise, type: held}
-  - $$mdi:apple-keyboard-option$$
+  - ''
+  - Caps Lock
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Sys:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Extra:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [16, 34]
+  k: '?'
+  l: [Base]
