@@ -4,6 +4,8 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: m165437
           url-base: https://github.com/M165437
+        - name: infely                            
+          url-base: https://github.com/infely      
         - name: padrecc
           url-base: https://github.com/Padrecc    
     projects:
@@ -17,5 +19,8 @@ manifest:
         - name: hammerbeam-slideshow          
           remote: padrecc                       
           revision: main
+        - name: nice-view-battery                 
+          remote: infely                     
+          revision: main  
     self:
         path: config
