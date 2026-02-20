@@ -1,26 +1,16 @@
 manifest:
     remotes:
         - name: zmkfirmware
-          url-base: https://github.com/zmkfirmware
-        - name: m165437
-          url-base: https://github.com/M165437
-        - name: infely                            
-          url-base: https://github.com/infely      
-        - name: padrecc
-          url-base: https://github.com/Padrecc    
+          url-base: https://github.com/zmkfirmware   
+        - name: mctechnology17
+          url-base: https://github.com/mctechnology17  
     projects:
         - name: zmk
           remote: zmkfirmware
           revision: v0.3
           import: app/west.yml
-        - name: nice-view-gem
-          remote: m165437
-          revision: v0.3.0
-        - name: hammerbeam-slideshow          
-          remote: padrecc                       
-          revision: main
-        - name: nice-view-battery                 
-          remote: infely                     
-          revision: main  
+        - name: zmk-nice-oled
+          remote: mctechnology17
+          revision: main 
     self:
         path: config
