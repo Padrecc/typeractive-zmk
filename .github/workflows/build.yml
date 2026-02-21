@@ -5,4 +5,4 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
     with:
-      archive_name: firmware-${{ github.ref_name }}-${{ substring(github.event.repository.updated_at, 0, 10) }}-${{ github.run_number }}.zip
+      archive_name: firmware-${{ github.ref_name }}-${{ github.run_number }}.zip
