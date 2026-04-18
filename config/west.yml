@@ -1,21 +1,16 @@
 manifest:
     remotes:
         - name: zmkfirmware
-          url-base: https://github.com/zmkfirmware
-        - name: m165437
-          url-base: https://github.com/M165437
+          url-base: https://github.com/zmkfirmware   
         - name: padrecc
-          url-base: https://github.com/Padrecc    
+          url-base: https://github.com/padrecc
     projects:
         - name: zmk
           remote: zmkfirmware
           revision: v0.3
           import: app/west.yml
-        - name: nice-view-gem
-          remote: m165437
-          revision: v0.3.0
-        - name: hammerbeam-slideshow          
-          remote: padrecc                       
-          revision: main
+        - name: zmk-nice-oled
+          remote: padrecc
+          revision: main 
     self:
         path: config
