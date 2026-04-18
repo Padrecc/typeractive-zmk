@@ -4,6 +4,8 @@ on: [workflow_dispatch]
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     permissions:
       contents: write # allow workflow to commit to the repo
     with:
